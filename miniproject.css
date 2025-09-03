@@ -1,0 +1,104 @@
+*{
+    font-family: "Atkinson Hyperlegible Mono", serif;
+    margin: 0;
+    padding: 0;
+}
+.main_box{
+    background: url("camera.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+.btn_one{
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+}
+.btn_one i{ 
+    cursor: pointer;
+}
+.sidebar_menu{
+    height: 100vh;
+    position: fixed;
+    width: 300px;
+    background-color: rgba(255, 255,255, 0.1);
+    left:-300px;
+    transition: all 0.3s linear;
+}
+.sidebar_menu .sidebar_heading{
+   position: absolute;
+   width: 100%; 
+   line-height: 60px;
+   font-size: 25px;
+   left: 12px;
+   box-shadow: 0 0 4px rgba(255,255,255,0.5);
+}
+.sidebar_menu .sidebar_heading a{
+    position: absolute;
+    left: 45px;
+    color: white;
+    text-decoration: none;
+}
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    left: -20px;
+}
+.btn_two{
+    position: absolute;
+    left: 270px;
+    line-height: 65px;
+    
+}
+.btn_two i{
+    cursor:pointer;
+
+}
+.sidebar_menu .menu i,a{
+    color: white;
+    text-decoration: none;
+}
+.sidebar_menu .menu li{
+    margin: 10px;
+    padding: 10px 20px;
+    
+}
+.sidebar_menu .menu i{
+    padding: 10px;
+}
+.sidebar_menu .social_media{
+    position: absolute;
+    left: 22%;
+    bottom: 100px;
+    opacity: 0.5;
+}
+.sidebar_menu .social_media i{
+    padding: 5px;
+}
+#check{
+    display: none;
+}
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 4px rgba(255,255,255,0.5);
+}
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    font-size: 25px;
+    transition: all 0.2s linear;
+}
+#check:checked ~ .sidebar_menu{
+    left: 0px;
+}
+#check:checked ~ .btn_one{
+    opacity: 0;
+}
+.btn_two i:hover{
+    font-size: 30px;
+    color: white;
+    transition: all 0.2s linear;
+}
+.btn_one i:hover{
+    font-size: 30px;
+    color: white;
+    transition: all 0.2s linear;
+}
